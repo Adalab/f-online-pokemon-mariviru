@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import '../stylesheets/PokemonList.css';
+import '../stylesheets/PokemonCard.css';
 
 class PokemonCard extends Component {
   render() {
@@ -11,18 +11,32 @@ class PokemonCard extends Component {
       num,
     } = this.props;
     return (
-      <div>
-        <img src={img} alt={name} />
-        <h2>{name}</h2>
-        <ul>{types.map(function (type, index) {
-          return (
-            <li
-              key={index}
-            >{type.type.name}</li>
-          )
-        })}
-        </ul>
-        <span>{num}</span>
+      <div className='pokemon__card'>
+        <div className="image__container">
+          <img
+            className='pokemon__card-image'
+            src={img}
+            alt={name}
+          />
+          <span className='pokemon__card-number'>ID/{num}</span>
+        </div>
+        <div className="pokemon__card-data">
+          <h2 className='data__name'>
+            {name}
+          </h2>
+          <ul className='data__types'>
+            {types.map(function (type, index) {
+              return (
+                <li
+                  className='data__types-type'
+                  key={index}
+                >
+                  {type.type.name}
+                </li>
+              )
+            })}
+          </ul>
+        </div>
       </div>
     );
   }
