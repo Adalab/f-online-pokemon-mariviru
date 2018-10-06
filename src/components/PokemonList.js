@@ -20,14 +20,16 @@ class PokemonList extends Component {
     console.log('lista', listToShow)
     if(pokeList.length === 0) {
       return (
-        <p>Loading</p>
+        <p className='loading'>Loading</p>
       )
     } else {
       return(
-        <ul className='Character__list' >
+        <ul className='pokemon__list' >
 				{listToShow.sort((a, b) => a.id - b.id).map(function (pokemon, index) {
 					return (
-						<li key={index}>
+            <li 
+              className='pokemon__list-element'
+              key={index}>
 								<PokemonCard
                   name={pokemon.name}
                   types={pokemon.types}

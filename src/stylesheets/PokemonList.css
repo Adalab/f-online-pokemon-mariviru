@@ -1,0 +1,6 @@
+.pokemon__list {
+  display: flex;
+    flex-flow: row wrap;
+    list-style: none;
+    margin: 0 30px;
+}

@@ -10,19 +10,19 @@ class Filter extends Component {
     } = this.props;
 
     return (
-      <form className="Form">
+      <form className="form">
         <label
           htmlFor="buscador"
-          className='Form__title'>
-          Pokemon
+          className='form__title'>
+          Buscador de Pokemons
           </label>
         <input
           onChange={handleInput}
           id="buscador"
           type="text"
           value={inputState}
-          placeholder='Busca a tu pokemon favorito'
-          className='Form__input'
+          placeholder='Filtra pokemons por nombre...'
+          className='form__input'
         />
       </form>
     );
