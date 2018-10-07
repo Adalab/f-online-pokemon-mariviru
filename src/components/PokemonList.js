@@ -25,8 +25,7 @@ class PokemonList extends Component {
     } else {
       return(
         <ul className='pokemon__list' >
-				{listToShow.sort((a, b) => a.id - b.id).map(function (pokemon, index) {
-					return (
+				{listToShow.sort((a, b) => a.id - b.id).map((pokemon, index) =>
             <li 
               className='pokemon__list-element'
               key={index}>
@@ -37,8 +36,7 @@ class PokemonList extends Component {
                   num={pokemon.id}
 								/>
 						</li>
-					)
-				})}
+				)}
 			</ul>
 
         )

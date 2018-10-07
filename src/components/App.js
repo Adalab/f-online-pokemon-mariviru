@@ -67,7 +67,7 @@ class App extends Component {
     } = this.state;
 
     return (
-      <div>
+      <main>
         <Filter
           handleInput={this.handleInput}
           inputState={input}
@@ -77,7 +77,7 @@ class App extends Component {
           filterList={filterList}
           input={input}
         />
-      </div>
+      </main>
     );
   }
 }
