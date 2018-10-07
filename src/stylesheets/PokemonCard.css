@@ -6,7 +6,7 @@
   flex-direction: column;
   justify-content: space-between;
   margin: 15px;
-  box-shadow: 3px 6px 15px 0px #6d6868;
+  box-shadow: 3px 6px 15px 0px #6D6868;
 }
 
 .image__container {
@@ -30,8 +30,8 @@
   width: 50px;
   height: 20px;
   font-size: 12px;
-  background-color: #bbbab8;
-  color: #9C8975;
+  background-color: #BBBAB8;
+  color: #82664B;
 }
 
 .pokemon__card-data {
@@ -54,13 +54,13 @@
 }
 
 .data__types-type {
-  border: 1px solid #9C8975;
+  border: 1px solid #82664B;
   border-radius: 6px;
   display: block;
   margin-right: 10px;
   padding: 5px;
   font-size: 12px;
   text-transform: uppercase;
-  color: #9C8975;
+  color: #82664B;
 }
 
