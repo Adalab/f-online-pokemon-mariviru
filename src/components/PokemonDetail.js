@@ -13,8 +13,6 @@ class PokemonDetail extends Component {
     } = this.props;
 
     const detail = pokeList[match.params.id - 1]
-    console.log('match', match)
-    console.log('pokelist', pokeEvolution)
 
     return (
       <section className='pokemon__detail-container' >
