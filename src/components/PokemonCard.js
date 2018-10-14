@@ -26,17 +26,17 @@ class PokemonCard extends Component {
           <span className='pokemon__card-number'>ID/{num}</span>
         </div>
         <div className="pokemon__card-data">
-          <h2 className='data__name'>
+          <h2 className="data__name">
             {name}
           </h2>
-          <p>
-            Evolves from:
+          <p className="data__evolve">
+            Evolves from-->
             {pokeSpecies.map(function (specie) {
               if (specie.id === num) {
                 return (
                   specie.evolves_from_species !== null ?
-                    specie.evolves_from_species.name :
-                    'none'
+                  specie.evolves_from_species.name :
+                  'none'
                 )
               } else {
                 return '';
@@ -44,11 +44,11 @@ class PokemonCard extends Component {
             }
             )}
           </p>
-          <ul className='data__types'>
+          <ul className="data__types">
             {types.map(function (type, index) {
               return (
                 <li
-                  className='data__types-type'
+                  className="data__types-type"
                   key={index}
                 >
                   {type.type.name}
