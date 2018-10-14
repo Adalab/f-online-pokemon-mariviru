@@ -37,20 +37,24 @@
 .pokemon__card-data {
   background-color: #FFF;
   height: 80px;
+  padding-left: 10px;
   border-bottom-left-radius: 3px;
   border-bottom-right-radius: 3px;
 }
 
 .data__name {
-  margin-left: 10px;
-  margin-top: 15px;
+  margin-top: 5px;
   text-transform: capitalize;
+}
+
+.data__evolve {
+  font-size: 12px;
 }
 
 .data__types {
   list-style: none;
   display: flex;
-  margin: 5px 10px;
+  margin-top: 5px;
 }
 
 .data__types-type {
