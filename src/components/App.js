@@ -50,7 +50,6 @@ class App extends Component {
           this.setState({
             pokeSpecies: pokeSpeciesData.sort((a, b) => a.id - b.id),
           })
-          console.log('pokeSpeciesData', pokeSpeciesData)
            return fetch(URLEVOLUTIONCHAIN + i + '/')
         })
         .then(evolution => evolution.json())
@@ -59,7 +58,6 @@ class App extends Component {
           this.setState({
             pokeEvolution: pokeEvolutionData.sort((a, b) => a.id - b.id),
           })
-          console.log('pokeEvolutionData', pokeEvolutionData)
         })
         .catch(error => {
           console.log('Hubo un problema con la petición: ' + error.message)
